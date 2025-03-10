@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Box, CircularProgress, Typography, Button } from "@mui/material";
 import { useDispatch } from "react-redux";
@@ -18,7 +18,7 @@ export const FlightDetailsPage: FC = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const [seats, setSeats] = useState<SeatType[][]>(() => generateSeats());
+  const [seats] = useState<SeatType[][]>(() => generateSeats());
 
   const [selectedSeats, setSelectedSeats] = useState<string[]>([]);
 
