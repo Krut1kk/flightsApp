@@ -1,0 +1,37 @@
+.FlightCard {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  margin: 8px 0;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.flightTitle {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #1976d2;
+}
+
+.airline {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #424242;
+}
+
+.route,
+.times,
+.price,
+.terminals,
+.seats {
+  font-size: 0.9rem;
+  color: #616161;
+  margin: 4px 0;
+}

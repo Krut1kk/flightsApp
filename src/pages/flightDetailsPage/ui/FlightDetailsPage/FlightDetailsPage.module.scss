@@ -1,0 +1,27 @@
+.FlightDetailsPage {
+  padding: 24px;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.seatGrid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.seatRow {
+  display: flex;
+}
+
+.loadingContainer,
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
